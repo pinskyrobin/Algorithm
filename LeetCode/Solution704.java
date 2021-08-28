@@ -5,6 +5,7 @@ class Solution704 {
         int len = Array.getLength(nums);
         return binarySearch(nums, 0, len - 1, target);
     }
+
     public int binarySearch(int[] nums, int start, int end, int target) {
         if (start == end) {
             return (nums[start] == target) ? start : -1;
