@@ -3,10 +3,9 @@ import java.util.Arrays;
 /**
  * 给你一个只包含 '(' 和 ')' 的字符串，找出最长有效（格式正确且连续）括号子串的长度。
  */
-class Solution {
+class Solution32 {
     public int longestValidParentheses(String s) {
         if (s.length() < 2) return 0;
-        int ans = 0;
         char[] str = s.toCharArray();
         int[] dp = new int[str.length];
 
